@@ -15,6 +15,9 @@
 		FAAD9D2525F8E0B9004FFD63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD9D2325F8E0B9004FFD63 /* LaunchScreen.storyboard */; };
 		FAAD9D3025F8E0B9004FFD63 /* PalindromTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD9D2F25F8E0B9004FFD63 /* PalindromTests.swift */; };
 		FAAD9D3B25F8E0B9004FFD63 /* PalindromUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD9D3A25F8E0B9004FFD63 /* PalindromUITests.swift */; };
+		FAAD9D5925F8E5F3004FFD63 /* Palindrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD9D5825F8E5F3004FFD63 /* Palindrom.swift */; };
+		FAAD9D6025F8EA38004FFD63 /* Palindrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD9D5825F8E5F3004FFD63 /* Palindrom.swift */; };
+		FAAD9D6425F8EA38004FFD63 /* Palindrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD9D5825F8E5F3004FFD63 /* Palindrom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,8 @@
 		FAAD9D3625F8E0B9004FFD63 /* PalindromUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalindromUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAD9D3A25F8E0B9004FFD63 /* PalindromUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromUITests.swift; sourceTree = "<group>"; };
 		FAAD9D3C25F8E0B9004FFD63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAD9D4E25F8E0D7004FFD63 /* Palindrom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Palindrom.entitlements; sourceTree = "<group>"; };
+		FAAD9D5825F8E5F3004FFD63 /* Palindrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palindrom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +104,7 @@
 		FAAD9D1725F8E0B7004FFD63 /* Palindrom */ = {
 			isa = PBXGroup;
 			children = (
+				FAAD9D4E25F8E0D7004FFD63 /* Palindrom.entitlements */,
 				FAAD9D1825F8E0B7004FFD63 /* AppDelegate.swift */,
 				FAAD9D1A25F8E0B7004FFD63 /* SceneDelegate.swift */,
 				FAAD9D1C25F8E0B7004FFD63 /* ViewController.swift */,
@@ -106,6 +112,7 @@
 				FAAD9D2125F8E0B9004FFD63 /* Assets.xcassets */,
 				FAAD9D2325F8E0B9004FFD63 /* LaunchScreen.storyboard */,
 				FAAD9D2625F8E0B9004FFD63 /* Info.plist */,
+				FAAD9D5825F8E5F3004FFD63 /* Palindrom.swift */,
 			);
 			path = Palindrom;
 			sourceTree = "<group>";
@@ -258,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAD9D5925F8E5F3004FFD63 /* Palindrom.swift in Sources */,
 				FAAD9D1D25F8E0B7004FFD63 /* ViewController.swift in Sources */,
 				FAAD9D1925F8E0B7004FFD63 /* AppDelegate.swift in Sources */,
 				FAAD9D1B25F8E0B7004FFD63 /* SceneDelegate.swift in Sources */,
@@ -268,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAD9D6025F8EA38004FFD63 /* Palindrom.swift in Sources */,
 				FAAD9D3025F8E0B9004FFD63 /* PalindromTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAD9D6425F8EA38004FFD63 /* Palindrom.swift in Sources */,
 				FAAD9D3B25F8E0B9004FFD63 /* PalindromUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,16 +446,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Palindrom/Palindrom.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Palindrom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tejas-Thanki.Palindrom";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,16 +467,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Palindrom/Palindrom.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Palindrom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tejas-Thanki.Palindrom";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
